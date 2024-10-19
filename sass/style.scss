@@ -4,11 +4,14 @@
 
 $color-golden: #ffc107;
 $color-light: #f8f9fa;
+$color-gray: #495057;
+$color-dark:  #000000;
 
 $font-family-roboto: 'Roboto', serif;
 $font-family-nunito: "Nunito Sans", sans-serif;
 $font-family-sans: "Open Sans", sans-serif;
 $font-family-imperial: "Imperial Script", cursive;
+$font-family-times: 'Times New Roman', Times, serif;
 
 /* Global */
 
@@ -20,9 +23,19 @@ body {
     margin: 0;
     text-align: center;
     font-size: 16px;
-    font-family: $font-family-sans;
+    font-family: $font-family-times;
 }
 
+p {
+    color: $color-gray;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 0.5;
+}
 
 /* Splash */
 
@@ -43,7 +56,7 @@ body {
         .golden {
             color: $color-golden;
             font-family: $font-family-imperial;
-            font-size: 38px;
+            font-size: 2.4rem;
         }
     
         .nav-links {
@@ -72,7 +85,6 @@ body {
             color: $color-light;
 
             .page-subtitle {
-                font-family: 'Times New Roman', Times, serif;
                 font-style: italic;
                 font-weight: 300;
                 text-transform: capitalize;
@@ -102,5 +114,22 @@ body {
             }
         }
     
+    }
+}
+
+/* Services */
+
+.services {
+    h2 + p {
+        font-style: italic;
+        font-weight: 600;
+    }
+    .box {
+        i {
+            color: $color-golden;
+            font-size: 2rem;
+            border: 3px solid $color-golden;
+            border-radius: 50%;
+        }
     }
 }
