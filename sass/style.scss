@@ -43,6 +43,12 @@ h2 + p {
     line-height: 0.5;
 }
 
+li {
+    display: inline-block;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
 /* Splash */
 
 .splash {
@@ -69,12 +75,9 @@ h2 + p {
             font-family: $font-family-roboto;
             
             li {
-                display: inline-block;
-                padding: 5px 15px;
                 font-weight: 500;
                 color: $color-light;
                 text-transform: uppercase;
-                cursor: pointer;
 
                 &:hover {
                     color: $color-golden;
