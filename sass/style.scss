@@ -121,8 +121,7 @@ li {
                     opacity: .8;
                 }
             }
-        }
-    
+        }   
     }
 }
 
@@ -174,6 +173,43 @@ li {
 
         &:hover {
             opacity: 0.8;
+        }
+    }
+}
+
+/* Footer */
+
+footer {
+    background: $color-light;
+
+   .social-links {
+        text-align: start;
+
+        li {    
+            width: 30px;
+            height: 30px;
+            line-height: 30px; 
+            border: 1px solid $color-dark;
+            border-radius: 50%;
+            background-color: $color-dark;   
+            padding: 0;    
+            margin-right: 10px;
+
+            a {
+                font-size: 0;
+
+                i {
+                    width: 100%;
+                    height: 100%;
+                    color: $color-light;
+                    text-align: center;
+                    font-size: 14px;;
+                }    
+    
+                &:hover {
+                    opacity: .8;
+                }
+            }         
         }
     }
 }
